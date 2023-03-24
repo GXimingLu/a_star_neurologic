@@ -6,8 +6,7 @@ DATA_DIR='../dataset'
 SPLIT='dev'
 
 DEVICES=$1
-FACTOR=$2
-OUTPUT_FILE=$3
+OUTPUT_FILE=$2
 
 # neurologic with greedy look-ahead
 CUDA_VISIBLE_DEVICES=${DEVICES} python decode_gpt2.py --model_name 'gpt2-large' \
